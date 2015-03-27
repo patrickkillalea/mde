@@ -1,0 +1,664 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--<link rel="icon" href="clock_blue.ico">-->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+
+    <title>Mapper Data Exchange</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/myScript.js"></script>
+
+    <!-- Custom styles for this template -->
+    <link href="font-awesome-4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <!-- Support Colors CSS -->
+    <link href="css/sb-admin-2.css" rel="stylesheet">
+
+    <link href="css/custom.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand active" id="ExchangeHomePage" href="#">MDX</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#">Link</a>
+                        </li>
+                        <li><a href="#">Link</a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Biz Area <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">BSwift</a>
+                                </li>
+                                <li class="divider"></li>
+                                <li><a href="#">Benefit Focus</a>
+                                </li>
+                                <li class="divider"></li>
+                                <li><a href="#">VB</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Client <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">Action</a>
+                                </li>
+                                <li><a href="#">Another action</a>
+                                </li>
+                                <li><a href="#">Something else here</a>
+                                </li>
+                                <li class="divider"></li>
+                                <li><a href="#">Separated link</a>
+                                </li>
+                                <li class="divider"></li>
+                                <li><a href="#">One more separated link</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Job <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">Action</a>
+                                </li>
+                                <li><a href="#">Another action</a>
+                                </li>
+                                <li><a href="#">Something else here</a>
+                                </li>
+                                <li class="divider"></li>
+                                <li><a href="#">Separated link</a>
+                                </li>
+                                <li class="divider"></li>
+                                <li><a href="#">One more separated link</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="navbar-form navbar-left" role="search">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                        </div>
+                        <button type="submit" class="btn btn-default">Submit</button>
+                    </form>
+                    <ul class="nav navbar-brand navbar-right">
+                        <a href="#">Patrick Killalea</a>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+
+        <div id="ExchangeHomePageDiv">
+
+            <div class="row">
+                <div class="col-xs-6 col-md-3">
+                    <a id="JobHomePage" class="thumbnail thumb-icons">
+                        <div class="thumb-center">
+                            <i class="fa fa-cogs fa-5x"></i>
+                        </div>
+                        <div class="thumb-center">
+                            EXISTING JOB
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xs-6 col-md-3">
+                    <a id="" class="thumbnail thumb-icons">
+                        <div class="thumb-center">
+                            <i class="fa fa-calendar fa-5x"></i>
+                        </div>
+                        <div class="thumb-center">
+                            CREATE NEW
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xs-6 col-md-3">
+                    <a id="" class="thumbnail thumb-icons">
+                        <div class="thumb-center">
+                            <i class="fa fa-users fa-5x"></i>
+                        </div>
+                        <div class="thumb-center">
+                            SUPPORT
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xs-6 col-md-3">
+                    <a id="" class="thumbnail thumb-icons">
+                        <div class="thumb-center">
+                            <i class="fa fa-ticket fa-5x"></i>
+                        </div>
+                        <div class="thumb-center">
+
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="JobHomePageDiv">
+            <div class="well">
+                <div class="col-md-2"><a id="JobHomePage">Job Home</a>
+                </div>
+                <div class="col-md-2">JobID: 1595</div>
+                <div class="col-md-2">Area: BSwift</div>
+                <div class="col-md-2">Client: Belcan</div>
+                <div class="col-md-2">Job: P01 Payroll</div>
+                <div class="col-md-2">PRODUCTION</div>
+            </div>
+            <div class="row">
+                <div class="col-xs-6 col-md-3">
+                    <a id="JobSettings" class="thumbnail thumb-icons" href="#">
+                        <div class="thumb-center">
+                            <i class="fa fa-cogs fa-5x"></i>
+                        </div>
+                        <div class="thumb-center">
+                            SETTINGS
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xs-6 col-md-3">
+                    <a id="JobSchedule" class="thumbnail thumb-icons">
+                        <div class="thumb-center">
+                            <i class="fa fa-calendar fa-5x"></i>
+                        </div>
+                        <div class="thumb-center">
+                            SCHEDULE
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xs-6 col-md-3">
+                    <a id="JobSupport" class="thumbnail thumb-icons">
+                        <div class="thumb-center">
+                            <i class="fa fa-users fa-5x"></i>
+                        </div>
+                        <div class="thumb-center">
+                            SUPPORT
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xs-6 col-md-3">
+                    <a id="JobQualityCenter" class="thumbnail thumb-icons">
+                        <div class="thumb-center">
+                            <i class="fa fa-ticket fa-5x"></i>
+                        </div>
+                        <div class="thumb-center">
+                            QUALITY CENTER
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-6 col-md-3">
+                    <a id="JobFileInfo" class="thumbnail thumb-icons">
+                        <div class="thumb-center">
+                            <i class="fa fa-file-o fa-5x"></i>
+                        </div>
+                        <div class="thumb-center">
+                            FILE INFO
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xs-6 col-md-3">
+                    <a id="JobFTP" class="thumbnail thumb-icons">
+                        <div class="thumb-center">
+                            <i class="fa fa-exchange fa-5x"></i>
+                        </div>
+                        <div class="thumb-center">
+                            FTP
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xs-6 col-md-3">
+                    <a id="JobEmail" class="thumbnail thumb-icons">
+                        <div class="thumb-center">
+                            <i class="fa fa-envelope-o fa-5x"></i>
+                        </div>
+                        <div class="thumb-center">
+                            EMAIL
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xs-6 col-md-3">
+                    <a id="JobJobFlow" class="thumbnail thumb-icons">
+                        <div class="thumb-center">
+                            <i class="fa fa-sitemap fa-5x"></i>
+                        </div>
+                        <div class="thumb-center">
+                            JOB FLOW
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-6 col-md-3">
+                    <a id="JobInfo" class="thumbnail thumb-icons">
+                        <div class="thumb-center">
+                            <i class="fa fa-info-circle fa-5x"></i>
+                        </div>
+                        <div class="thumb-center">
+                            INFO
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xs-6 col-md-3">
+                    <a id="JobAlerts" class="thumbnail thumb-icons">
+                        <div class="thumb-center">
+                            <i class="fa fa-bell fa-5x"></i>
+                        </div>
+                        <div class="thumb-center">
+                            ALERTS
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="JobSettingsDiv">
+            <div class="well">
+                <div class="col-md-2"><a id="JobHomePage">Job Home</a>
+                </div>
+                <div class="col-md-2">JobID: 1595</div>
+                <div class="col-md-2">Area: BSwift</div>
+                <div class="col-md-2">Client: Belcan</div>
+                <div class="col-md-2">Job: P01 Payroll</div>
+                <div class="col-md-2">PRODUCTION</div>
+            </div>
+            settings
+        </div>
+
+        <div id="JobScheduleDiv" hidden="true">
+            <div class="well">
+                <div class="col-md-2"><a id="JobHomePage">Job Home</a>
+                </div>
+                <div class="col-md-2">JobID: 1595</div>
+                <div class="col-md-2">Area: BSwift</div>
+                <div class="col-md-2">Client: Belcan</div>
+                <div class="col-md-2">Job: P01 Payroll</div>
+                <div class="col-md-2">PRODUCTION</div>
+            </div>
+            schedule
+        </div>
+
+        <div id="JobSupportDiv" hidden="true">
+            <div class="well">
+                <div class="col-md-2"><a id="JobHomePage">Job Home</a>
+                </div>
+                <div class="col-md-2">JobID: 1595</div>
+                <div class="col-md-2">Area: BSwift</div>
+                <div class="col-md-2">Client: Belcan</div>
+                <div class="col-md-2">Job: P01 Payroll</div>
+                <div class="col-md-2">PRODUCTION</div>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        Developer SME
+                    </div>
+                    <div>Patrick Killalea</div>
+                    <div>Sean Macklin</div>
+                </div>
+            </div>
+
+            <div class="col-xs-6 col-md-3">
+                <div class="panel panel-green">
+                    <div class="panel-heading">
+                        Business SME
+                    </div>
+                    <div>Dawn Harrison</div>
+                    <div>Tony Bernard</div>
+                </div>
+            </div>
+
+            <div class="col-xs-6 col-md-3">
+                <div class="panel panel-yellow">
+                    <div class="panel-heading">
+                        Client Contact
+                    </div>
+                    <div>Jan Hunter</div>
+                    <div></div>
+                </div>
+            </div>
+
+            <div class="col-xs-6 col-md-3">
+                <div class="panel panel-red">
+                    <div class="panel-heading">
+                        On Call
+                    </div>
+                    <div>Seamus Cunningham</div>
+                    <div>Richard Collins</div>
+                </div>
+            </div>
+
+            <div class="col-xs-6 col-md-3">
+                <a id="Knowledgebase" class="thumbnail thumb-icons">
+                    <div class="thumb-center">
+                        <i class="fa fa-ticket fa-5x"></i>
+                    </div>
+                    <div class="thumb-center">
+                        KNOWLEDGEBASE
+                    </div>
+                </a>
+            </div>
+
+        </div>
+
+
+        <div id="JobQualityCenterDiv" hidden="true">
+            <div class="well">
+                <div class="col-md-2"><a id="JobHomePage">Job Home</a>
+                </div>
+                <div class="col-md-2">JobID: 1595</div>
+                <div class="col-md-2">Area: BSwift</div>
+                <div class="col-md-2">Client: Belcan</div>
+                <div class="col-md-2">Job: P01 Payroll</div>
+                <div class="col-md-2">PRODUCTION</div>
+            </div>
+            quality center
+        </div>
+
+        <div id="JobFileInfoDiv" hidden="true">
+            <div class="well">
+                <div class="col-md-2"><a id="JobHomePage">Job Home</a>
+                </div>
+                <div class="col-md-2">JobID: 1595</div>
+                <div class="col-md-2">Area: BSwift</div>
+                <div class="col-md-2">Client: Belcan</div>
+                <div class="col-md-2">Job: P01 Payroll</div>
+                <div class="col-md-2">PRODUCTION</div>
+            </div>
+            file info
+        </div>
+
+        <div id="JobFTPDiv" hidden="true">
+            <div class="well">
+                <div class="col-md-2"><a id="JobHomePage">Job Home</a>
+                </div>
+                <div class="col-md-2">JobID: 1595</div>
+                <div class="col-md-2">Area: BSwift</div>
+                <div class="col-md-2">Client: Belcan</div>
+                <div class="col-md-2">Job: P01 Payroll</div>
+                <div class="col-md-2">PRODUCTION</div>
+            </div>
+            ftp
+        </div>
+
+        <div id="JobEmailDiv" hidden="true">
+            <div class="well">
+                <div class="col-md-2"><a id="JobHomePage">Job Home</a>
+                </div>
+                <div class="col-md-2">JobID: 1595</div>
+                <div class="col-md-2">Area: BSwift</div>
+                <div class="col-md-2">Client: Belcan</div>
+                <div class="col-md-2">Job: P01 Payroll</div>
+                <div class="col-md-2">PRODUCTION</div>
+            </div>
+            email
+        </div>
+
+        <div id="JobJobFlowDiv" hidden="true">
+            <div class="well">
+                <div class="col-md-2"><a id="JobHomePage">Job Home</a>
+                </div>
+                <div class="col-md-2">JobID: 1595</div>
+                <div class="col-md-2">Area: BSwift</div>
+                <div class="col-md-2">Client: Belcan</div>
+                <div class="col-md-2">Job: P01 Payroll</div>
+                <div class="col-md-2">PRODUCTION</div>
+            </div>
+            job flow
+        </div>
+
+        <div id="JobInfoDiv" hidden="true">
+            <div class="well">
+                <div class="col-md-2"><a id="JobHomePage">Job Home</a>
+                </div>
+                <div class="col-md-2">JobID: 1595</div>
+                <div class="col-md-2">Area: BSwift</div>
+                <div class="col-md-2">Client: Belcan</div>
+                <div class="col-md-2">Job: P01 Payroll</div>
+                <div class="col-md-2">PRODUCTION</div>
+            </div>
+            info
+        </div>
+
+        <div id="JobAlertsDiv" hidden="true">
+            <div class="well">
+                <div class="col-md-2"><a id="JobHomePage">Job Home</a>
+                </div>
+                <div class="col-md-2">JobID: 1595</div>
+                <div class="col-md-2">Area: BSwift</div>
+                <div class="col-md-2">Client: Belcan</div>
+                <div class="col-md-2">Job: P01 Payroll</div>
+                <div class="col-md-2">PRODUCTION</div>
+            </div>
+            alerts
+        </div>
+
+        <script>
+            $("#JobHomePageDiv").hide();
+
+
+            // $("#ExchangeHomePage").click(function() {
+            //     $("#ExchangeHomePageDiv").show();
+            //     $("#JobHomePageDiv").hide();
+            //     $("#JobSettingsDiv").hide();
+            //     $("#JobScheduleDiv").hide();
+            //     $("#JobSupportDiv").hide();
+            //     $("#JobQualityCenterDiv").hide();
+            //     $("#JobFileInfoDiv").hide();
+            //     $("#JobFTPDiv").hide();
+            //     $("#JobEmailDiv").hide();
+            //     $("#JobJobFlowDiv").hide();
+            //     $("#JobInfoDiv").hide();
+            //     $("#JobAlertsDiv").hide();
+            // });
+
+            // $("#JobHomePage").click(function() {
+            //     $("#ExchangeHomePageDiv").hide();
+            //     $("#JobHomePageDiv").show();
+            //     $("#JobSettingsDiv").hide();
+            //     $("#JobScheduleDiv").hide();
+            //     $("#JobSupportDiv").hide();
+            //     $("#JobQualityCenterDiv").hide();
+            //     $("#JobFileInfoDiv").hide();
+            //     $("#JobFTPDiv").hide();
+            //     $("#JobEmailDiv").hide();
+            //     $("#JobJobFlowDiv").hide();
+            //     $("#JobInfoDiv").hide();
+            //     $("#JobAlertsDiv").hide();
+            // });
+
+            //   $("#JobSettings").click(function() {
+            //       $("#ExchangeHomePageDiv").hide();
+            //       $("#JobHomePageDiv").hide();
+            //       $("#JobSettingsDiv").show();
+            //       $("#JobScheduleDiv").hide();
+            //       $("#JobSupportDiv").hide();
+            //       $("#JobQualityCenterDiv").hide();
+            //       $("#JobFileInfoDiv").hide();
+            //       $("#JobFTPDiv").hide();
+            //       $("#JobEmailDiv").hide();
+            //       $("#JobJobFlowDiv").hide();
+            //       $("#JobInfoDiv").hide();
+            //       $("#JobAlertsDiv").hide();
+            //   });
+
+            //   $("#JobSchedule").click(function() {
+            //       $("#ExchangeHomePageDiv").hide();
+            //       $("#JobHomePageDiv").hide();
+            //       $("#JobSettingsDiv").hide();
+            //       $("#JobScheduleDiv").show();
+            //       $("#JobSupportDiv").hide();
+            //       $("#JobQualityCenterDiv").hide();
+            //       $("#JobFileInfoDiv").hide();
+            //       $("#JobFTPDiv").hide();
+            //       $("#JobEmailDiv").hide();
+            //       $("#JobJobFlowDiv").hide();
+            //       $("#JobInfoDiv").hide();
+            //       $("#JobAlertsDiv").hide();
+            //   });
+
+            //   $("#JobSupport").click(function() {
+            //       $("#ExchangeHomePageDiv").hide();
+            //       $("#JobHomePageDiv").hide();
+            //       $("#JobSettingsDiv").hide();
+            //       $("#JobScheduleDiv").hide();
+            //       $("#JobSupportDiv").show();
+            //       $("#JobQualityCenterDiv").hide();
+            //       $("#JobFileInfoDiv").hide();
+            //       $("#JobFTPDiv").hide();
+            //       $("#JobEmailDiv").hide();
+            //       $("#JobJobFlowDiv").hide();
+            //       $("#JobInfoDiv").hide();
+            //       $("#JobAlertsDiv").hide();
+            //   });
+
+            //   $("#JobQualityCenter").click(function() {
+            //       $("#ExchangeHomePageDiv").hide();
+            //       $("#JobHomePageDiv").hide();
+            //       $("#JobSettingsDiv").hide();
+            //       $("#JobScheduleDiv").hide();
+            //       $("#JobSupportDiv").hide();
+            //       $("#JobQualityCenterDiv").show();
+            //       $("#JobFileInfoDiv").hide();
+            //       $("#JobFTPDiv").hide();
+            //       $("#JobEmailDiv").hide();
+            //       $("#JobJobFlowDiv").hide();
+            //       $("#JobInfoDiv").hide();
+            //       $("#JobAlertsDiv").hide();
+            //   });
+
+            //   $("#JobFileInfo").click(function() {
+            //       $("#ExchangeHomePageDiv").hide();
+            //       $("#JobHomePageDiv").hide();
+            //       $("#JobSettingsDiv").hide();
+            //       $("#JobScheduleDiv").hide();
+            //       $("#JobSupportDiv").hide();
+            //       $("#JobQualityCenterDiv").hide();
+            //       $("#JobFileInfoDiv").show();
+            //       $("#JobFTPDiv").hide();
+            //       $("#JobEmailDiv").hide();
+            //       $("#JobJobFlowDiv").hide();
+            //       $("#JobInfoDiv").hide();
+            //       $("#JobAlertsDiv").hide();
+            //   });
+
+            //   $("#JobFTP").click(function() {
+            //       $("#ExchangeHomePageDiv").hide();
+            //       $("#JobHomePageDiv").hide();
+            //       $("#JobSettingsDiv").hide();
+            //       $("#JobScheduleDiv").hide();
+            //       $("#JobSupportDiv").hide();
+            //       $("#JobQualityCenterDiv").hide();
+            //       $("#JobFileInfoDiv").hide();
+            //       $("#JobFTPDiv").show();
+            //       $("#JobEmailDiv").hide();
+            //       $("#JobJobFlowDiv").hide();
+            //       $("#JobInfoDiv").hide();
+            //       $("#JobAlertsDiv").hide();
+            //   });
+
+            //   $("#JobEmail").click(function() {
+            //       $("#ExchangeHomePageDiv").hide();
+            //       $("#JobHomePageDiv").hide();
+            //       $("#JobSettingsDiv").hide();
+            //       $("#JobScheduleDiv").hide();
+            //       $("#JobSupportDiv").hide();
+            //       $("#JobQualityCenterDiv").hide();
+            //       $("#JobFileInfoDiv").hide();
+            //       $("#JobFTPDiv").hide();
+            //       $("#JobEmailDiv").show();
+            //       $("#JobJobFlowDiv").hide();
+            //       $("#JobInfoDiv").hide();
+            //       $("#JobAlertsDiv").hide();
+            //   });
+
+            //   $("#JobJobFlow").click(function() {
+            //       $("#ExchangeHomePageDiv").hide();
+            //       $("#JobHomePageDiv").hide();
+            //       $("#JobSettingsDiv").hide();
+            //       $("#JobScheduleDiv").hide();
+            //       $("#JobSupportDiv").hide();
+            //       $("#JobQualityCenterDiv").hide();
+            //       $("#JobFileInfoDiv").hide();
+            //       $("#JobFTPDiv").hide();
+            //       $("#JobEmailDiv").hide();
+            //       $("#JobJobFlowDiv").show();
+            //       $("#JobInfoDiv").hide();
+            //       $("#JobAlertsDiv").hide();
+            //   });
+
+            //   $("#JobInfo").click(function() {
+            //       $("#ExchangeHomePageDiv").hide();
+            //       $("#JobHomePageDiv").hide();
+            //       $("#JobSettingsDiv").hide();
+            //       $("#JobScheduleDiv").hide();
+            //       $("#JobSupportDiv").hide();
+            //       $("#JobQualityCenterDiv").hide();
+            //       $("#JobFileInfoDiv").hide();
+            //       $("#JobFTPDiv").hide();
+            //       $("#JobEmailDiv").hide();
+            //       $("#JobJobFlowDiv").hide();
+            //       $("#JobInfoDiv").show();
+            //       $("#JobAlertsDiv").hide();
+            //   });
+
+            //   $("#JobAlerts").click(function() {
+            //       $("#ExchangeHomePageDiv").hide();
+            //       $("#JobHomePageDiv").hide();
+            //       $("#JobSettingsDiv").hide();
+            //       $("#JobScheduleDiv").hide();
+            //       $("#JobSupportDiv").hide();
+            //       $("#JobQualityCenterDiv").hide();
+            //       $("#JobFileInfoDiv").hide();
+            //       $("#JobFTPDiv").hide();
+            //       $("#JobEmailDiv").hide();
+            //       $("#JobJobFlowDiv").hide();
+            //       $("#JobInfoDiv").hide();
+            //       $("#JobAlertsDiv").show();
+            //   });
+        </script>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/knockout-min.js"></script>
+
+</body>
+
+</html>
